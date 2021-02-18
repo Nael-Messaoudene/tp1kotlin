@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TP01_MESSAOUDENE_NAEL</string>
+    <string name="calculator_toast">Calculator + TOAST !</string>
+    <string name="send_mail">Send Mail !</string>
 </resources>
