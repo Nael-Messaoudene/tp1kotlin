@@ -17,6 +17,13 @@
         android:background="@color/colorPrimaryDark"
         />
 
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Calculate"
+        />
 
     <Button
         android:id="@+id/Mail"

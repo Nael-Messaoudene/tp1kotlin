@@ -9,9 +9,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.gmail.nmessaoudene.tp01_messaoudene_nael.databinding.ActivityHomeBinding;
 import com.gmail.nmessaoudene.tp01_messaoudene_nael.databinding.ActivityMainBinding;
 
@@ -28,15 +30,23 @@ public class HomeActivity extends AppCompatActivity {
         initViews();
         Log.v("bonjour","test");
 
+
     }
 
     private Button Mail;
     private Button Calculate;
+    private ImageView imgView;
+
 
     private void initViews() {
         Mail = binding.Mail;
         Calculate = binding.Calculate;
+        imgView = binding.imgView;
 
+        Glide.with(this).load("https://www.gammvert.fr/conseils/sites/default/files/styles/main_image/public/2019-12/AdobeStock_112707234.jpg?itok=oq3IWFPp").into(imgView);
+
+
+        //Glide.with(this).load("http://goo.gl/gEgYUd").into(imageView);
 
         Mail.setOnClickListener(new View.OnClickListener() {
 
